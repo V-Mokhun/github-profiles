@@ -1,6 +1,17 @@
-# Github Profiles projecy
+# Github Profiles project
 
 Allows you to search for github profiles and see some information about a person.
+
+## You can watch this project via link: [my-github-profiles.netlify.app](https://my-github-profiles.netlify.app) or by installing it and running on your computer as shown below
+
+## To install this app, run:
+
+```sh
+git clone https://github.com/V-Mokhun/github-profiles [YOUR_FOLDER_NAME]
+cd github-profiles [or the way you called your folder]
+yarn install
+yarn start
+```
 
 ## Available Scripts
 

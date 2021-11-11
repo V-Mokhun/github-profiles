@@ -9,7 +9,7 @@ const ProfileBody = ({ data }) => {
     <div className={classes.profile__body}>
       <div className={classes.profile__top}>
         <a
-          href={data.avatar_url}
+          href={data.html_url}
           rel="noreferrer"
           target="_blank"
           className={classes.profile__name}
