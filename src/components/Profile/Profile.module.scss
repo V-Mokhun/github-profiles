@@ -1,0 +1,103 @@
+.profile {
+  display: flex;
+  align-items: flex-start;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  border: 1px solid #e5e8ec;
+  transition: background-color 0.3s linear, border-color 0.3s linear,
+    color 0.3s linear;
+
+  &.dark {
+    border: 1px solid #265d97;
+    background-color: #132f4c;
+    color: #e5e8ec;
+  }
+
+  &__error {
+    font-size: 2rem;
+    color: #ff0000;
+    margin: 0px 0px 30px 0px;
+  }
+  &__avatar {
+    margin: 0px 30px 0px 0px;
+  }
+  &__img {
+    border-radius: 50%;
+    height: auto;
+    max-width: 100%;
+    max-height: 350px;
+    object-fit: cover;
+  }
+
+  &__body {
+    flex: 1 1 auto;
+  }
+
+  &__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  &__name {
+    font-size: 1.7rem;
+    font-weight: 700;
+    margin: 0px 10px 15px 0px;
+    color: inherit;
+
+    &:hover,
+    &:focus {
+      text-decoration: underline;
+    }
+  }
+  &__created {
+    font-size: 1.4rem;
+    font-weight: 500;
+    margin: 0px 0px 15px 0px;
+  }
+
+  &__info {
+    margin: 0px 0px 10px 0px;
+
+    &_title {
+      display: inline-block;
+      font-size: 1.5rem;
+      font-weight: 700;
+      margin: 0px 15px 0px 0px;
+    }
+    &_text {
+      font-size: 1.2rem;
+      line-height: 150%;
+      display: inline;
+    }
+  }
+
+  &__item {
+    margin: 0px 0px 10px 0px;
+    font-size: 1.1rem;
+
+    a {
+      color: inherit;
+      text-decoration: underline;
+
+      &:hover,
+      &:focus {
+        text-decoration: none;
+      }
+    }
+  }
+
+  &__followers {
+    display: flex;
+    align-items: center;
+    img {
+      margin: 0px 5px;
+      border-radius: 50%;
+      width: 20px;
+      height: 20px;
+      object-fit: cover;
+    }
+  }
+}

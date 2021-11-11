@@ -1,0 +1,48 @@
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 10px 0;
+  background-color: cornflowerblue;
+  transition: background-color 0.3s linear;
+
+  &.dark {
+    background-color: #0a1929b8;
+    box-shadow: rgb(19, 47, 76) 0px -1px 1px inset;
+
+    .header__theme_button {
+      background-color: #042649;
+
+      &:hover,
+      &:focus {
+        background-color: lighten(#001e3c, 10%);
+      }
+    }
+  }
+
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__logo {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #e5e8ec;
+  }
+
+  &__theme_button {
+    padding: 10px 15px;
+    background-color: #007fff;
+    border-radius: 5px;
+    color: #e5e8ec;
+    transition: background-color 0.3s linear;
+
+    &:hover,
+    &:focus {
+      background-color: darken(#007fff, 10%);
+    }
+  }
+}

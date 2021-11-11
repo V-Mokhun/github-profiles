@@ -1,0 +1,7 @@
+.main {
+  transition: background-color 0.3s linear;
+
+  &.dark {
+    background-color: #001e3c;
+  }
+}
